@@ -6,14 +6,25 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.router'
 
+
+
+// MODULOS PROPIOS
+
+import { PageModule  } from './page/page.module';
+import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component'
+import { ComponentsModule } from './components/components.module'
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     LoginModule,
     RouterModule,
+    PageModule,
+    ComponentsModule,
     APP_ROUTES
   ],  
   providers: [],

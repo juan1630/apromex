@@ -1,0 +1,10 @@
+.flex-nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.agregar {
+    font-size: 0.8em;
+    color: green;
+    font-weight: 600;
+}
