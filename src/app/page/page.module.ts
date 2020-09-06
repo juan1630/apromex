@@ -7,6 +7,7 @@ import { PAGES_ROUTES  } from './page.route';
 import { HomeComponent } from './home/home/home.component';
 import { AgregarSociedadComponent } from './agregar-sociedad/agregar-sociedad.component';
 import {  ComponentsModule } from '../components/components.module'
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -17,6 +18,7 @@ import {  ComponentsModule } from '../components/components.module'
     RouterModule,
     FormsModule,
     PAGES_ROUTES,
+    HttpClientModule,
     ComponentsModule,
     ReactiveFormsModule
   ],

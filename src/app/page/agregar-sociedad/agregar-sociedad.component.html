@@ -16,14 +16,14 @@
                 <input type="file" name="" id="">
             </div>
             <div class="col-md-7 ">
-                <div class="form-group ">
+                <!-- <div class="form-group ">
                     <label for="id "> ID: </label>
-                    <input type="text " id="id " class="form-control ">
-                </div>
+                    <input type="text" name="id" [(ngModel)]="info.id" id="id " class="form-control ">
+                </div> -->
 
                 <div class="form-group ">
                     <label for="nombre "> NOMBRE: </label>
-                    <input type="text " id="nombre " class="form-control ">
+                    <input type="text " id="nombre" name="nombre" [(ngModel)]="info.nombre" class="form-control ">
                 </div>
 
             </div>
@@ -32,25 +32,25 @@
             <div class="col-md-6 ">
                 <div class="form-group ">
                     <label for="direccion "> DIRECCION: </label>
-                    <input type="text " id="direccion " class="form-control ">
+                    <input type="text " id="direccion " class="form-control" name="direccion" [(ngModel)]="info.direccion">
                 </div>
 
                 <div class="form-group ">
                     <label for="rfc "> RFC: </label>
-                    <input type="text " id="rfc " class="form-control ">
+                    <input type="text " id="rfc " class="form-control" name="RFC" [(ngModel)]="info.RFC">
                 </div>
             </div>
             <div class="col-md-6 ">
 
 
-                <div class="form-group ">
+                <!-- <div class="form-group ">
                     <label for="cp ">  C.P.  </label>
-                    <input type="text " name="cp " id="cp " class="form-control ">
-                </div>
+                    <input type="text " name="cp " id="cp" class="form-control" [(ngModel)]="info.cp">
+                </div> -->
 
                 <div class="form-group ">
                     <label for="telefono "> TELEFONO:  </label>
-                    <input type="text " name="telefono " id="telefono " class="form-control ">
+                    <input type="text " name="telefono " id="telefono " class="form-control" [(ngModel)]="info.telefono">
                 </div>
 
             </div>
@@ -59,7 +59,7 @@
             <div class="col-md-12 ">
                 <div class="form-group ">
                     <label for="correo "> CORREO: </label>
-                    <input type="text " id="correo " class="form-control ">
+                    <input type="text " id="correo " class="form-control" name="correo" [(ngModel)]="info.correo">
                 </div>
             </div>
 
@@ -71,18 +71,18 @@
 
             <div class="col-md-7 ">
                 <label for="nombreRepresentante "> NOMBRE</label>
-                <input type="text " name="nombreRepresentante " id="nombreRepresentante " class="form-control ">
+                <input type="text " name="nombreRepresentante " id="nombreRepresentante " class="form-control" [(ngModel)]="info.nombreRepresentante">
             </div>
             <div class="col-md-5 ">
                 <label for="apellidos ">APELLIDOS</label>
-                <input type="text " name="apellidoRepresentante " id="apellidos " class="form-control ">
+                <input type="text " name="apellidoRepresentante " id="apellidos " class="form-control" [(ngModel)]="info.apellidosRepresentante">
             </div>
 
 
             <div class="col-md-7 ">
                 <div class="form-group ">
                     <label for="correpRepresentante ">  CORREO </label>
-                    <input type="text " name="correpRepresentante " id="correpRepresentante " class="form-control ">
+                    <input type="text " name="correpRepresentante " id="correpRepresentante " class="form-control" [(ngModel)]="info.correoRepresentante">
                 </div>
 
             </div>
@@ -90,13 +90,13 @@
             <div class="col-md-5 ">
                 <div class="form-group ">
                     <label for="telefonoRepresentante "> TELEFONO </label>
-                    <input type="text " name="telefonoRepresentante " id="telefonoRepresentante " class="form-control ">
+                    <input type="text " name="telefonoRepresentante " id="telefonoRepresentante" [(ngModel)]="info.telefonoRepresentante" class="form-control ">
                 </div>
             </div>
 
 
             <div class="col-md-4 offset-md-5 ">
-                <button class="btn btn-success "> 
+                <button class="btn btn-success" (click)="enviar()"> 
                     <i class="fa-save "></i>
                     Guardar
                 </button>

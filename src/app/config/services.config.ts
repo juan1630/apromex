@@ -1,0 +1,1 @@
+export const URLDEV = 'http://localhost:3000';
